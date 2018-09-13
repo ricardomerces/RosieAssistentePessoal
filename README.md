@@ -69,6 +69,6 @@ Cria Áudios (mensagens pré gravadas)
 - **_liga/desativa BUNKER_**        Controla iluminação do escritório (IoT com MQTT)
 - **_notícias_**                    Reproduz as últimas notícias
 - **_tarefas_**                     Lista as tarefas não concluídas do INBOX (todoist)
-- **_temperatura hoje_**            Informações sobre mínima e máxima (openweather)
+- **_previsão do tempo_**           Informações sobre mínima e máxima (openweather)
 - **_tempo agora_**                 Informações sobre temperatura e condição Climática (openweather)
 - **_toca <NOME DO ÁLBUM>_**        Reproduz o álbum no spotify (web player)
