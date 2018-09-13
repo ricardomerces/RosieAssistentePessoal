@@ -80,7 +80,7 @@ def executa_comandos(trigger):
     elif 'tarefas' in trigger:
         todoistInbox()
 
-    elif 'temperatura hoje' in trigger:
+    elif 'temperatura hoje' in trigger or 'previsão do tempo' in trigger:
         previsao_tempo(minmax=True)
 
     elif 'tempo agora' in trigger:
@@ -88,9 +88,14 @@ def executa_comandos(trigger):
 
     else:
         mensagem = trigger.strip(configuracao['hotword'])
-        cria_audio(mensagem)
-        print('COMANDO INVÁLIDO: ', mensagem)
-        responde('comando_invalido')
+        if len(mensagem)<=1:
+            responde('comando_nulo')
+
+        else:
+            print('esta é a mensagem: ', mensagem)
+            cria_audio(mensagem)
+            print('COMANDO INVÁLIDO: ', mensagem)
+            responde('comando_invalido')
 
 ##### FUNÇÕES dos COMANDOS #####
 
@@ -124,7 +129,7 @@ def previsao_tempo(tempo=False, minmax=False):
     if tempo:
         mensagem = f'No momento fazem {temperatura} graus com: {descricao}'
     elif minmax:
-        mensagem = f'Mínima de {minima} e máxima de {maxima} graus'
+        mensagem = f'Previsão para hoje: Mínima de {minima} e máxima de {maxima} graus'
     cria_audio(mensagem)
 
 def publica_mqtt(topic, payload):
