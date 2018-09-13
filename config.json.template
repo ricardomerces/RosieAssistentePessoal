@@ -1,0 +1,10 @@
+{
+   "hotword": "rose",
+   "apiOpenWeather": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "apiDoIst" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "todoIstProjectId" : "1111111111",
+   "mqttBroker": "111.cloudmqtt.com",
+   "mqttPort": 11111,
+   "mqttUser": "xxxxxxxx",
+   "mqttPassword": "xxxxxxxxxxxxxx"
+}
