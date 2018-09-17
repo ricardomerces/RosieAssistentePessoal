@@ -58,7 +58,6 @@ def cria_audio(mensagem):
     print('ROSIE:  ', mensagem)
     call(['afplay', 'audios/mensagem.mp3'])     # OSX
     #call(['aplay', 'audios/mensagem.mp3'])     # LINUX
-    #playsound('audios/mensagem.mp3')           # WINDOWS :(
 
 def executa_comandos(trigger):
 
