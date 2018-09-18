@@ -91,9 +91,8 @@ def executa_comandos(trigger):
             responde('comando_nulo')
 
         else:
-            print('esta é a mensagem: ', mensagem)
             cria_audio(mensagem)
-            print('COMANDO INVÁLIDO: ', mensagem)
+            print('C.INVÁLIDO:', mensagem)
             responde('comando_invalido')
 
 ##### FUNÇÕES dos COMANDOS #####
