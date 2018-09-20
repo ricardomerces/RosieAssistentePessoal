@@ -9,7 +9,6 @@ import json
 from gtts import gTTS
 import speech_recognition as sr
 from subprocess import call         # MAC / LINUX
-#from playsound import playsound    # WINDOWS :(
 from requests import get
 from bs4 import BeautifulSoup
 import webbrowser as browser
